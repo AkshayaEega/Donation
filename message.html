@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylem.css" />
+    <script>
+      function myFunction() {
+        if (hide1 == 1) {
+          document.getElementById("hide1").style.display = "none";
+          return (hide1 = 0);
+        } else {
+          document.getElementById("hide1").style.display = "inline";
+          return (hide1 = 1);
+        }
+        function some() {
+          location.replace("https://www.registration.html");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="topnav">
+      <form action="aboutus.html" onclick="myFunction()">
+        <a href="#about Us">About Us</a>
+      </form>
+      <a href="#Contact Us">Contact Us</a>
+      <a href="#Blog">Blog</a>
+
+      <form action="message.html" onclick="myFunction()">
+        <a class="active" href="#home">Home</a>
+      </form>
+    </div>
+    <div class="total">
+      <div class="image">
+        <img
+          src="https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2017/10/05/USATODAY/usatsports/glass-jar-full-of-cois-with-donate-written-on-it-charity-donation-philanthropy_large.jpg?width=1200&disable=upscale&format=pjpg&auto=webp"
+          width="100%"
+          height="500px"
+        />
+      </div>
+      <center>
+        <h3>
+          Donating is a powerful way to make a difference in the world.Your
+          donation can help support important causes, provide aid to those in
+          need, and advance critical research. By giving to a charity or cause,
+          you have the opportunity to be part of something bigger than yourself
+          and to make a positive impact in the lives of others.
+        </h3>
+        <div class="forbuttons">
+          <form action="donate.html" onclick="myFunction()">
+            <button type="submit" class="btn">Donate</button>
+            <p id="demo"></p>
+          </form>
+          <button onclick="some()" type="submit" class="btn">Volunteer</button>
+        </div>
+      </center>
+    </div>
+    <br /><br />
+    <div class="hide" id="hide1">
+      <!--Whenever  aboutus is clicked it displays the following content at the down of page-->
+      <div class="total">
+        <div class="image">
+          <img
+            src="https://thepeopleofasia.com/wp-content/uploads/2019/07/children-cute-enjoyment-1432697.jpg"
+            width="100%"
+            height="500px"
+          />
+        </div>
+
+        <div class="data">
+          <h1>About</h1>
+          <p>
+            As old age people undergo great difficulties in life and lack love,
+            affection and care it always leads to mental stress.You can donate
+            your time by visiting our Happy Old Age Home and spend time with the
+            grannies. The elders need companionship and emotional support. You
+            can donate saplings, seeds and plants to the garden of old age
+            homes. It creates a peaceful environment for them. Studies have
+            shown that spending time in nature helps in depression.
+          </p>
+        </div>
+        <div>
+          <h1>mission</h1>
+          <p>
+            By contributing to a cause, you are working towards making the world
+            a better place. The donation of your time, money, or items goes to
+            those who need it most. You can increase your impact by encouraging
+            your friends, family, colleagues, and networks to give as well.
+          </p>
+        </div>
+        <div>
+          <h1>vision</h1>
+          <p>
+            A charity must have one or more of the purposes which have been
+            defined in law. These include things like: relieving poverty,
+            education, religion, protecting the environment, animal welfare,
+            human rights and community development
+          </p>
+        </div>
+             
+      </div>
+      <br />
+      <br />
+
+      <div class="anime">
+        <img
+          src="https://i.pinimg.com/originals/85/58/96/8558966629a7ce761a1879c7adda6c17.jpg"
+          width="90%"
+          height="390vh"
+        />
+        <div class="first">
+          <h2>150</h2>
+          <h2>Countries</h2>
+        </div>
+        <div class="sec">
+          <h2>200</h2>
+          <h2>volunters</h2>
+        </div>
+
+        <div class="third">
+          <h2>400</h2>
+          <h2>our goal</h2>
+        </div>
+        <div class="fourth">
+          <h2>550</h2>
+          <h2>raised</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

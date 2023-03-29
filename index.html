@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styled.css" />
+  </head>
+  <body>
+    <div class="a">
+      <!--It is login page.Need to enter coorect details to redirect to the next page-->
+      <div class="container">
+        <img
+          src="https://www.cancer.net/sites/cancer.net/files/styles/blog_media/public/donate-help-blog.png?itok=tSbeI2pI"
+          width="100%"
+          height="600px"
+        />
+        <p>
+          Making a donation is ultimate sign of solidarity. Actions speak louder
+          than words.
+        </p>
+      </div>
+      <form class="login" onsubmit="return false;" id="form">
+        <div class="box">
+          <input
+            id="Email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          /><span id="demo1"></span>
+        </div>
+
+        <div class="box">
+          <input
+            id="username"
+            type="text"
+            name="username"
+            placeholder="Enter your Name"
+          />
+          <span id="demo2"></span>
+        </div>
+        <div class="box">
+          <input
+            id="contact"
+            type="text"
+            name="contact"
+            placeholder="Enter your mobile no."
+          />
+          <span id="dem03"></span>
+        </div>
+
+        <button
+          onclick='var form = document.getElementById("form");
+        var email = document.getElementById("Email").value;
+        var uname = document.getElementById("username").value;
+        var contact = document.getElementById("contact").value;
+        var text = document.getElementById("demo1");
+        var regex1 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var regex2 = /[A-Za-z0-9 . ]{3,20}$/;
+        var regex3 = /[789][0-9]{9}/;
+        if (email.trim() == "" || contact.trim() == "" || uname.trim() == "") {
+          alert("No blank spaces are allowed");
+          return false;
+        }
+        console.log("inside");
+
+        if(!email.match(regex1) || !contact.match(regex3) || !uname.match(regex2) )
+        {
+          alert("either email,username or conatct  is incorrect");
+          return ;
+        }
+        
+        window.location.href = "http://127.0.0.1:5500/message.html"; 
+
+     '
+          class="btn"
+        >
+          Submit
+        </button>
+      </form>
+       
+    </div>
+  </body>
+</html>

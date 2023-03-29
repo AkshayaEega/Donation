@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        width: 300px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        padding: 10px;
+      }
+      input[type="text"]:focus {
+        width: 70%;
+      }
+      .images {
+        height: 800px;
+        width: 100%;
+        border: 2px solid rgb(245, 233, 233);
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .item {
+        width: 350px;
+        height: 260px;
+        border: 2px solid white;
+        background-color: palegoldenrod;
+        margin: 5px;
+        padding: 3px;
+        box-shadow: peachpuff;
+
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+
+      .item button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: black;
+        background-color: papayawhip;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .item button:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <input
+        type="text"
+        name="search"
+        placeholder="Search nearest organisation"
+      />
+    </center>
+
+    <div class="images">
+      <div class="item" id="item-1">
+        <img
+          src="https://seeklogo.com/images/F/food-logo-59E5A73AFD-seeklogo.com.png"
+          style="width: 30%"
+        />
+        <h1>Food donation</h1>
+        <p class="price"></p>
+        <p>
+          Some text about the jeans. Super slim and comfy lorem ipsum lorem
+          jeansum. Lorem jeamsun denim lorem jeansum.
+        </p>
+        <p><button>Donate Now</button></p>
+      </div>
+
+      <div class="item" id="item-2">
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/projects/404/c47526102644041.Y3JvcCw0MDAxLDMxMjksMCw0MzU.jpg"
+          style="width: 23%"
+        />
+        <h1>blood bank</h1>
+        <p class="price"></p>
+        <p>
+          Some text about the jeans. Super slim and comfy lorem ipsum lorem
+          jeansum. Lorem jeamsun denim lorem jeansum.
+        </p>
+        <p><button>Donate Now</button></p>
+      </div>
+      <div class="item" id="item-3">
+        <img
+          src="https://us.123rf.com/450wm/sergeypykhonin/sergeypykhonin1809/sergeypykhonin180900041/108230283-registration-register-logo-or-label-diary-note-icon-vector-illustration.jpg?ver=6"
+          style="width: 22%"
+        />
+        <h1>education</h1>
+        <p class="price"></p>
+        <p>
+          Some text about the jeans. Super slim and comfy lorem ipsum lorem
+          jeansum. Lorem jeamsun denim lorem jeansum.
+        </p>
+        <p><button>Donate Now</button></p>
+      </div>
+      <div class="item" id="item-4">
+        <img
+          src="https://thumbs.dreamstime.com/z/orphan-children-home-line-art-logo-design-against-white-background-53860272.jpg"
+          style="width: 22%"
+        />
+        <h1>orphanages</h1>
+        <p class="price"></p>
+        <p>
+          Some text about the jeans. Super slim and comfy lorem ipsum lorem
+          jeansum. Lorem jeamsun denim lorem jeansum.
+        </p>
+        <p><button>Donate Now</button></p>
+      </div>
+      <div class="item" id="item-5">
+        <img
+          src="https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/challenges/58643319392.jpg"
+          style="width: 53%"
+        />
+        <h1>old age homes</h1>
+        <p class="price"></p>
+        <p>
+          Some text about the jeans. Super slim and comfy lorem ipsum lorem
+          jeansum. Lorem jeamsun denim lorem jeansum.
+        </p>
+        <p><button>Donate Now</button></p>
+      </div>
+      <div class="item" id="item-6">
+        <img
+          src="https://www.shutterstock.com/image-photo/vet-examining-dog-cat-puppy-260nw-1828050692.jpg"
+          style="width: 24%"
+        />
+        <h1>pets care</h1>
+        <p class="price"></p>
+        <p>
+          Some text about the jeans. Super slim and comfy lorem ipsum lorem
+          jeansum. Lorem jeamsun denim lorem jeansum.
+        </p>
+        <p><button>Donate Now</button></p>
+      </div>
+    </div>
+  </body>
+</html>
